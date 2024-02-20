@@ -2,6 +2,7 @@ import { useState } from "react";
 import Landing from "./components/Landing/Landing";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
+import About from "./components/About/About";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Landing />
       <Services />
       <Portfolio />
+      <About />
     </div>
   );
 }

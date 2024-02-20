@@ -17,11 +17,11 @@ const Nav = () => {
     },
     {
       text: "About me",
-      link: "About",
+      link: "#About",
     },
     {
       text: "Contact me",
-      link: "Contact",
+      link: "#Contact",
     },
   ];
 
