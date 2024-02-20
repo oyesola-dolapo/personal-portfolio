@@ -46,7 +46,7 @@ export default function Projects() {
         },
         {
           btnText: "Code",
-          link: "https://www.figma.com/file/4OypLn3qSmjImRvOyIvz9v/NFT?type=design&node-id=0%3A1&mode=design&t=kK65jgb0QMbhNZWu-1",
+          link: "https://github.com/oyesola-dolapo/9FF",
         },
       ],
     },
