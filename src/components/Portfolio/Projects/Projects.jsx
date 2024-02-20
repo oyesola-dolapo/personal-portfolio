@@ -73,7 +73,8 @@ export default function Projects() {
             <a href={project.button[0].link}>
               <img
                 loading="lazy"
-                src={project.image}
+                        src={project.image}
+                        target="_blank"
                 alt=""
                 className="rounded sm:h-[15rem] w-full  overflow-hidden
                 "
@@ -83,14 +84,16 @@ export default function Projects() {
             <div>
               <button>
                 <a
-                  href={project.button[0].link}
+                            href={project.button[0].link}
+                            target="_blank"
                   className="bg-myColor rounded px-2 py-1 text-black font-medium">
                   {project.button[0].btnText}
                 </a>
               </button>
               <button className="ml-4">
                 <a
-                  href={project.button[1].link}
+                            href={project.button[1].link}
+                            target="_blank"
                   className="border-2 border-solid border-myColor rounded px-2 py-1">
                   {project.button[1].btnText}
                 </a>

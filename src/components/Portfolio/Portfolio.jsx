@@ -11,10 +11,14 @@ export default function Portfolio() {
       <div className="flex gap-4 justify-center">
         <a
           href="https://www.behance.net/dolapooyesola"
+          target="_blank"
           className="view relative">
           View Behance
         </a>
-        <a href="https://github.com/oyesola-dolapo" className="view relative">
+        <a
+          href="https://github.com/oyesola-dolapo"
+          target="_blank"
+          className="view relative">
           View Github
         </a>
       </div>
