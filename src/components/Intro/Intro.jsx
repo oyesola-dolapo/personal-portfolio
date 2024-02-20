@@ -20,8 +20,11 @@ export default function Intro() {
     },
     {
       icon: <i class="fa-brands fa-github text-black"></i>,
-
       link: "https://github.com/oyesola-dolapo",
+    },
+    {
+      icon: <i class="fa-brands fa-behance text-black"></i>,
+      link: "https://www.behance.net/dolapooyesola",
     },
   ];
   return (
@@ -42,7 +45,7 @@ export default function Intro() {
           &nbsp; crafting innovative digital experiences with a blend of elegant
           design and cutting-edge technology.
         </p>
-        <ul className="flex gap-[3rem] mx-auto mt-20">
+        <ul className="flex gap-[2rem] mx-auto mt-20">
           {socials.map((social) => {
             return (
               <li>
