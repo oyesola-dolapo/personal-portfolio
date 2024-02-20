@@ -1,15 +1,16 @@
 import { useState } from "react";
 import Landing from "./components/Landing/Landing";
 import Services from "./components/Services/Services";
+import Portfolio from "./components/Portfolio/Portfolio";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div className="text-white bg-[#070707] min-h-[100vh] overflow-x-hidden">
       <Landing />
       <Services />
+      <Portfolio />
     </div>
   );
 }

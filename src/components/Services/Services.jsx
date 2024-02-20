@@ -21,7 +21,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="py-6 bg-[#131313]">
+    <section id="Services" className="py-6 bg-[#131313]">
       <p className="text-center opacity-[.5] text-sm">SERVICES</p>
       <h1 className="text-center text-2xl">
         What&nbsp;<span className="text-myColor">I do</span>
@@ -30,7 +30,7 @@ export default function Services() {
         {cards.map((card) => {
           const cardStyle =
             card.index === "01" ? "bg-myColor text-[#070707]" : "";
-          const lineStyle = card.index === "01" ? "bg-black" : "";
+          const lineStyle = card.index === "01" ? "bg-black" : "bg-white";
           return (
             <div
               key={card.index}
@@ -41,12 +41,12 @@ export default function Services() {
               <div className="text-2xl mb-4">{card.icon}</div>
               <h1 className="text-xl mb-4 font-medium">{card.title}</h1>
               <div
-                className={`bg-white w-[5rem] h-[2px] rounded-full mb-2 opacity ${lineStyle}`}></div>
+                className={`${lineStyle} w-[5rem] h-[2px] rounded-full mb-2 opacity `}></div>
               <p>{card.writeUp}</p>
             </div>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

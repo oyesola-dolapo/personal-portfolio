@@ -12,22 +12,26 @@ export default function Intro() {
   const socials = [
     {
       icon: <i class="fa-brands fa-x-twitter text-black"></i>,
+      link: "https://twitter.com/ferraziii",
     },
     {
       icon: <i class="fa-brands fa-linkedin-in text-black"></i>,
+      link: "https://www.linkedin.com/in/oyesola-dolapo-778642173/",
     },
     {
       icon: <i class="fa-brands fa-github text-black"></i>,
+
+      link: "https://github.com/oyesola-dolapo",
     },
   ];
   return (
-    <div className="h-screen relative flex px-2">
+    <section className="h-screen relative flex px-2">
       <img
         src="../../images/background.avif"
         alt=""
         className="absolute w-full h-full opacity-[.1]"
       />
-      <div className="details mx-auto my-auto flex flex-col pt-24">
+      <div className="details mx-auto my-auto flex flex-col pt-24 z-[1]">
         <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
@@ -43,7 +47,7 @@ export default function Intro() {
             return (
               <li>
                 <a
-                  href="#"
+                  href={social.link}
                   className="bg-[#CDCDCD] cursor-pointer px-[10px] py-[5px] sm:text-2xl rounded-full">
                   {social.icon}
                 </a>
@@ -52,6 +56,6 @@ export default function Intro() {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
