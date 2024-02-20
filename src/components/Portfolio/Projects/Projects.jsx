@@ -2,7 +2,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Carway",
-      image: "/images/project/Carway.png",
+      image: "/images/project/Carway.webp",
       button: [
         { btnText: "Demo", link: "https://oyesola-dolapo.github.io/Carway/" },
         { btnText: "Code", link: "https://github.com/oyesola-dolapo/Carway/" },
@@ -10,7 +10,7 @@ export default function Projects() {
     },
     {
       title: "Furniture",
-      image: "/images/project/Furniture.png",
+      image: "/images/project/Furniture.webp",
       button: [
         {
           btnText: "Demo",
@@ -24,7 +24,7 @@ export default function Projects() {
     },
     {
       title: "NFT Dashboard",
-      image: "/images/project/NFT.png",
+      image: "/images/project/NFT.webp",
       button: [
         {
           btnText: "Demo",
@@ -38,7 +38,7 @@ export default function Projects() {
     },
     {
       title: "𝟗ƑℲ",
-      image: "/images/project/9ff.png",
+      image: "/images/project/9ff.webp",
       button: [
         {
           btnText: "Demo",
@@ -52,7 +52,7 @@ export default function Projects() {
     },
     {
       title: "Nike",
-      image: "/images/project/Nike.png",
+      image: "/images/project/Nike.webp",
       button: [
         {
           btnText: "Demo",
