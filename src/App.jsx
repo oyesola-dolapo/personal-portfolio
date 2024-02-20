@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-[#070707] min-h-[100vh] overflow-x-hidden">
+    <div className="text-white bg-[#070707] min-h-[100vh] overflow-x-hidden">
       <Landing />
       <Services />
     </div>

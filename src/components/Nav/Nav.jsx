@@ -20,8 +20,8 @@ const Nav = () => {
       <h1 className="logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </h1>
-      <i class="fa-solid fa-bars text-xl md:hidden"></i>
-      <div className="hidden md:flex gap-[3rem] text-sm">
+      <i class="fa-solid fa-bars text-xl lg:hidden"></i>
+      <div className="hidden lg:flex gap-[3rem] text-sm">
         <ul className="flex gap-[3rem]">
           {navs.map((nav) => {
             return (
