@@ -4,10 +4,10 @@ import Intro from "../Intro/Intro";
 
 const Landing = () => {
   return (
-    <div className="relative">
+    <section id="Home" className="relative">
       <Nav />
       <Intro />
-    </div>
+    </section>
   );
 };
 
