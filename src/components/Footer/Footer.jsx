@@ -33,7 +33,7 @@ export default function Footer() {
     },
     {
       icon: <i class="fa-brands fa-whatsapp"></i>,
-      link: "https://wa.me/09067219868",
+      link: "https://wa.me/2349067219868",
     },
   ];
   return (
