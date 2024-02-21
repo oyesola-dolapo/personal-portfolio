@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "/src/components/Variants.js";
+
 export default function Projects() {
   const projects = [
     {
@@ -66,7 +69,9 @@ export default function Projects() {
     },
   ];
   return (
-    <ul className="py-6 flex flex-col gap-4 flex-wrap lg:gap-10 sm:flex-row justify-center">
+    <motion.ul
+      
+      className="py-6 flex flex-col gap-4 flex-wrap lg:gap-10 sm:flex-row justify-center">
       {projects.map((project) => {
         return (
           <li className="border-2 rounded-xl border-solid border-myColor p-4 sm:w-[25rem]">
@@ -102,6 +107,6 @@ export default function Projects() {
           </li>
         );
       })}
-    </ul>
+    </motion.ul>
   );
 }

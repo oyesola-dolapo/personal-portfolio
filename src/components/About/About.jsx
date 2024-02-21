@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
+
 export default function About() {
   return (
     <section id="About" className="py-6">
@@ -6,7 +9,12 @@ export default function About() {
         About <span className="text-myColor">Me</span>
       </h1>
       <div className="sm:flex sm:py-6 sm:px-6 gap-2 sm:items-start">
-        <div className="left flex py-6 sm:py-0 lg:w-[50%]">
+        <motion.div
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="left flex py-6 sm:py-0 lg:w-[50%]">
           <div className="m-auto border-[2px] border-solid border-myColor relative rounded-full w-max p-6">
             <img
               src="../../images/profile-img.webp"
@@ -34,8 +42,13 @@ export default function About() {
               className="icon right-0 bottom-10 lg:right-4 lg:bottom-20"
             />
           </div>
-        </div>
-        <div className="right flex flex-col gap-6 items-start px-6 lg:w-[50%] lg:px-20  mx-auto">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+          className="right flex flex-col gap-6 items-start px-6 lg:w-[50%] lg:px-20  mx-auto">
           <div className="opacity-[.7] text-sm flex flex-col gap-4 lg:text-base">
             <p>
               Greetings! I'm{" "}
@@ -72,7 +85,7 @@ export default function About() {
               <i class="fa-solid fa-download text-black ml-2"></i>
             </a>
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

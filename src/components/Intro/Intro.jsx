@@ -1,5 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
 
 export default function Intro() {
   const [typeEffect] = useTypewriter({
@@ -8,7 +10,6 @@ export default function Intro() {
     typeSpeed: 80,
     deleteSpeed: 50,
   });
-  const socialStyle = "text-black font-xl";
   const socials = [
     {
       icon: <i class="fa-brands fa-x-twitter text-black"></i>,
@@ -35,17 +36,32 @@ export default function Intro() {
         className="absolute w-full h-full opacity-[.1]"
       />
       <div className="details mx-auto my-auto flex flex-col pt-24 z-[1]">
-        <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
+        <motion.h1
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
-        </h1>
-        <p className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider my-6">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn("right", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider my-6">
           Passionate &nbsp;
           <span className="text-myColor font-medium">{typeEffect}</span>
           &nbsp; crafting innovative digital experiences with a blend of elegant
           design and cutting-edge technology.
-        </p>
-        <ul className="flex gap-[2rem] mx-auto mt-20">
+        </motion.p>
+        <motion.ul
+          variants={fadeIn("down", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex gap-[2rem] mx-auto mt-20">
           {socials.map((social) => {
             return (
               <li>
@@ -57,7 +73,7 @@ export default function Intro() {
               </li>
             );
           })}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );

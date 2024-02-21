@@ -1,4 +1,6 @@
 import styles from "./services.module.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
 
 export default function Services() {
   const cards = [
@@ -22,11 +24,18 @@ export default function Services() {
   ];
   return (
     <section id="Services" className="py-6 bg-[#131313]">
-      <p className="text-center opacity-[.5] text-sm">SERVICES</p>
-      <h1 className="text-center text-2xl">
-        What&nbsp;<span className="text-myColor">I do</span>
-      </h1>
-      <div className="flex flex-col sm:flex-row gap-8 sm:gap-20 mt-6 justify-center px-8">
+      <div>
+        <p className="text-center opacity-[.5] text-sm">SERVICES</p>
+        <h1 className="text-center text-2xl">
+          What&nbsp;<span className="text-myColor">I do</span>
+        </h1>
+      </div>
+      <motion.div
+        variants={fadeIn("up", 0)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0 }}
+        className="flex flex-col sm:flex-row gap-8 sm:gap-20 mt-6 justify-center px-8">
         {cards.map((card) => {
           const cardStyle =
             card.index === "01" ? "bg-myColor text-[#070707]" : "";
@@ -46,7 +55,7 @@ export default function Services() {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 }
