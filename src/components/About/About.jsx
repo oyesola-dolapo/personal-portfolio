@@ -80,9 +80,11 @@ export default function About() {
             </p>
           </div>
           <button>
-            <a href="#" className="bg-myColor rounded px-4 py-2 text-black">
-              Download Resume{" "}
-              <i class="fa-solid fa-download text-black ml-2"></i>
+            <a
+              href="../file/Resume-Oyesola-Dolapo.pdf"
+              target="_blank"
+              className="bg-myColor rounded px-4 py-2 text-black">
+              View Resume <i class="fa-solid fa-download text-black ml-2"></i>
             </a>
           </button>
         </motion.div>

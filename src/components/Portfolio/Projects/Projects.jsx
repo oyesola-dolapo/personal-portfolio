@@ -69,12 +69,12 @@ export default function Projects() {
     },
   ];
   return (
-    <motion.ul
+    <ul
       
-      className="py-6 flex flex-col gap-4 flex-wrap lg:gap-10 sm:flex-row justify-center">
+      className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center">
       {projects.map((project) => {
         return (
-          <li className="border-2 rounded-xl border-solid border-myColor p-4 sm:w-[25rem]">
+          <li className="border-2 rounded-xl border-solid border-myColor p-4 sm:w-[22rem]">
             <a href={project.button[0].link}>
               <img
                 loading="lazy"
@@ -107,6 +107,6 @@ export default function Projects() {
           </li>
         );
       })}
-    </motion.ul>
+    </ul>
   );
 }
