@@ -50,7 +50,7 @@ export default function Intro() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider my-6 mb-12">
+          className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider mt-6 mb-12 lg:mb-6">
           Passionate &nbsp;
           <span className="text-myColor font-medium">{typeEffect}</span>
           &nbsp; crafting innovative digital experiences with a blend of elegant
