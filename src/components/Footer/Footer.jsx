@@ -37,7 +37,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="flex flex-col lg:flex-row justify-between px-8 lg:px-32 py-8">
+    <footer className="flex flex-col lg:flex-row justify-between pb-4 px-8 lg:px-32 lg:py-8">
       <h1 className="mb-4 logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </h1>
