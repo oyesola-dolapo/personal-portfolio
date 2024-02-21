@@ -46,7 +46,7 @@ export default function Footer() {
           <p>Software Developer</p>
           <p>Ui Designer</p>
         </div>
-        <ul className="flex flex-col py-[2rem] gap-[1rem] lg:px-[4rem] lg:pb-[3rem] lg:border-x-2 lg:border-solid">
+        <ul className="flex flex-col py-[2rem] gap-[1rem] lg:py-0 lg:px-[4rem] lg:pb-[3rem] lg:border-x-2 lg:border-solid">
           {navs.map((nav) => {
             return (
               <li key={nav.text}>
@@ -57,11 +57,11 @@ export default function Footer() {
         </ul>
         <div className="lg:px-[4rem]">
           <p className="mb-4">Social media handles</p>
-          <ul className="flex gap-[1rem] ">
+          <ul className="flex gap-[1.5rem] ">
             {socials.map((social) => {
               return (
                 <li>
-                  <a href={social.link} target="_blank" className="">
+                  <a href={social.link} target="_blank" className="text-lg">
                     {social.icon}
                   </a>
                 </li>
