@@ -10,10 +10,10 @@ export default function About() {
       </h1>
       <div className="sm:flex sm:py-6 sm:px-6 gap-2 sm:items-start">
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("right", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0 }}
           className="left flex py-6 sm:py-0 lg:w-[50%]">
           <div className="m-auto border-[2px] border-solid border-myColor relative rounded-full w-max p-6">
             <img
@@ -44,10 +44,10 @@ export default function About() {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("left", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: false, amount: 0 }}
           className="right flex flex-col gap-6 items-start px-6 lg:w-[50%] lg:px-20  mx-auto">
           <div className="opacity-[.7] text-sm flex flex-col gap-4 lg:text-base">
             <p>

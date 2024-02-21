@@ -37,7 +37,7 @@ export default function Intro() {
       />
       <div className="details mx-auto my-auto flex flex-col pt-24 z-[1]">
         <motion.h1
-          variants={fadeIn("left", 0)}
+          variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
@@ -46,7 +46,7 @@ export default function Intro() {
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
         </motion.h1>
         <motion.p
-          variants={fadeIn("right", 0)}
+          variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
