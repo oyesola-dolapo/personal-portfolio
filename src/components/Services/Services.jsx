@@ -23,7 +23,7 @@ export default function Services() {
     },
   ];
   return (
-    <section id="Services" className="py-6 bg-[#131313]">
+    <section id="Services" className="py-10 bg-[#131313]">
       <div>
         <p className="text-center opacity-[.5] text-sm">SERVICES</p>
         <h1 className="text-center text-2xl">
