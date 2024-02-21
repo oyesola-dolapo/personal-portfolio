@@ -29,3 +29,14 @@
   object-fit: contain;
 }
 
+input,
+textarea {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 6px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  outline-color: #6495ed;
+}
