@@ -25,28 +25,28 @@ export default function Footer() {
     },
     {
       icon: <i class="fa-brands fa-facebook-f"></i>,
-      link: "https://www.linkedin.com/in/oyesola-dolapo-778642173/",
+      link: "https://web.facebook.com/Ferrazi.lee.5/",
     },
     {
       icon: <i class="fa-brands fa-instagram"></i>,
-      link: "https://github.com/oyesola-dolapo",
+      link: "https://www.instagram.com/ferrazi.dev/",
     },
     {
       icon: <i class="fa-brands fa-whatsapp"></i>,
-      link: "https://www.behance.net/dolapooyesola",
+      link: "https://wa.me/09067219868",
     },
   ];
   return (
-    <footer className="flex justify-between px-32 py-8">
-      <h1 className="logo tracking-wider text-xl">
+    <footer className="flex flex-col lg:flex-row justify-between px-8 lg:px-32 py-8">
+      <h1 className="mb-4 logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </h1>
-      <div className="flex text-sm opacity-[.7] lg:mr-24">
-        <div className="flex flex-col gap-[1rem] px-[4rem] pb-[3rem]">
+      <div className="flex flex-col lg:flex-row text-sm opacity-[.7] lg:mr-24">
+        <div className="flex flex-col gap-[1rem] lg:gap-[1rem] lg:px-[4rem] lg:pb-[3rem]">
           <p>Software Developer</p>
           <p>Ui Designer</p>
         </div>
-        <ul className="flex flex-col gap-[1rem] px-[4rem] pb-[3rem] border-x-2 border-solid">
+        <ul className="flex flex-col py-[2rem] gap-[1rem] lg:px-[4rem] lg:pb-[3rem] lg:border-x-2 lg:border-solid">
           {navs.map((nav) => {
             return (
               <li key={nav.text}>
@@ -55,8 +55,8 @@ export default function Footer() {
             );
           })}
         </ul>
-        <div className="px-[4rem] pb-[3rem]">
-          <p className="mb-4">Social media Handles</p>
+        <div className="lg:px-[4rem]">
+          <p className="mb-4">Social media handles</p>
           <ul className="flex gap-[1rem] ">
             {socials.map((social) => {
               return (

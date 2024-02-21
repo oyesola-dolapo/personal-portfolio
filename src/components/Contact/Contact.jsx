@@ -36,13 +36,13 @@ export default function Contact() {
         I am currently open to full-time, contract or part-time{" "}
         <span className="text-myColor">opportunities</span>
       </motion.p>
-      <div className="flex flex-col lg:flex-row bg-[#131313] lg:p-20 rounded-lg">
+      <div className="flex flex-col pb-8 px-8 lg:flex-row bg-[#131313] lg:p-20 rounded-lg">
         <motion.div
           variants={fadeIn("up", 0)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0 }}
-          className="px-7 py-4 lg:p-0 lg:w-[50%]">
+          className="py-4 lg:p-0 lg:w-[50%]">
           <p className="text-lg">Have an Awesome project idea?</p>
           <p className="text-myColor mb-6 lg:mb-10 mt-2 text-lg">
             Let's discuss
@@ -76,7 +76,7 @@ export default function Contact() {
             action="https://formsubmit.co/oyesolabolamide@gmail.com"
             method="POST"
             target="_blank"
-            className="mx-auto w-[85%]">
+            className="lg:mx-auto lg:w-[85%]">
             <label htmlFor="name">Full name</label>
             <input type="text" id="name" required placeholder="Enter name" />
             <label htmlFor="email">Email</label>
