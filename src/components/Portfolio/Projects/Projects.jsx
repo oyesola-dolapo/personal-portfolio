@@ -72,7 +72,12 @@ export default function Projects() {
     <ul className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center">
       {projects.map((project) => {
         return (
-          <li className="bg-[#070707] shadow shadow-slate-800 overflow-hidden rounded-xl border-solid border-myColor sm:w-[22rem]">
+          <motion.li
+            variants={fadeIn("up", 0)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0 }}
+            className="bg-[#070707] shadow shadow-slate-800 rounded-xl border-solid border-myColor sm:w-[20rem] lg:w-[25rem]">
             <a href={project.button[0].link}>
               <img
                 loading="lazy"
@@ -103,7 +108,7 @@ export default function Projects() {
                 </button>
               </div>
             </div>
-          </li>
+          </motion.li>
         );
       })}
     </ul>

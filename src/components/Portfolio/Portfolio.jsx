@@ -9,11 +9,7 @@ export default function Portfolio() {
       <h1 className="text-center">
         Featured <span className="text-myColor">Projects</span>
       </h1>
-      <motion.div
-        variants={fadeIn("up", 0)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0 }}>
+      <motion.div>
         <Projects />
         <div className="flex gap-4 justify-center">
           <a
