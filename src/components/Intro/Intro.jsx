@@ -40,7 +40,7 @@ export default function Intro() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="details mx-auto my-auto flex flex-col pt-24 z-[1]">
+        className=" details mx-auto my-auto flex flex-col pt-24">
         <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>

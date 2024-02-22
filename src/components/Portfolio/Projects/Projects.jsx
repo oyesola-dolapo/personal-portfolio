@@ -69,40 +69,39 @@ export default function Projects() {
     },
   ];
   return (
-    <ul
-      
-      className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center">
+    <ul className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center">
       {projects.map((project) => {
         return (
-          <li className="border-2 rounded-xl border-solid border-myColor p-4 sm:w-[22rem]">
+          <li className="bg-[#070707] shadow shadow-slate-800 overflow-hidden rounded-xl border-solid border-myColor sm:w-[22rem]">
             <a href={project.button[0].link}>
               <img
                 loading="lazy"
                 src={project.image}
                 target="_blank"
                 alt=""
-                className="rounded sm:h-[15rem] w-full  overflow-hidden
-                "
+                className="rounded sm:h-[15rem] w-full overflow-hidden border-[1px] border-myColor"
               />
             </a>
-            <h1 className="py-4">{project.title}</h1>
-            <div>
-              <button>
-                <a
-                  href={project.button[0].link}
-                  target="_blank"
-                  className="bg-myColor rounded px-2 py-1 text-black font-medium btn-anim">
-                  {project.button[0].btnText}
-                </a>
-              </button>
-              <button className="ml-4">
-                <a
-                  href={project.button[1].link}
-                  target="_blank"
-                  className="border-2 border-solid border-myColor rounded px-2 py-1">
-                  {project.button[1].btnText}
-                </a>
-              </button>
+            <div className="flex items-center justify-between p-4 py-6">
+              <h1 className="">{project.title}</h1>
+              <div className="flex gap-2">
+                <button>
+                  <a
+                    href={project.button[0].link}
+                    target="_blank"
+                    className="border-[1px] border-myColor rounded px-2 py-1 btn-anim">
+                    {project.button[0].btnText}
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href={project.button[1].link}
+                    target="_blank"
+                    className="border-[1px] border-solid border-myColor rounded px-2 py-1">
+                    {project.button[1].btnText}
+                  </a>
+                </button>
+              </div>
             </div>
           </li>
         );
