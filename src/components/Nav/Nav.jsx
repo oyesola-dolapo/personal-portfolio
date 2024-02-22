@@ -32,7 +32,7 @@ const Nav = () => {
     setMenu(!menu);
   };
   return (
-    <nav className="z-[1] flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] absolute top-0 left-0 w-screen">
+    <nav className="z-[99] flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] absolute top-0 left-0 w-screen">
       <h1 className="logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </h1>
