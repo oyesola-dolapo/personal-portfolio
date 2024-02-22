@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "/src/components/Variants.js";
 
 const Nav = () => {
   const navs = [
@@ -48,7 +50,12 @@ const Nav = () => {
           }}></i>
       )}
       {menu && (
-        <ul className="bg-myColor flex flex-col gap-2 rounded-lg p-4 px-6 text-black font-medium side-nav absolute right-[1rem] top-[100%]">
+        <motion.ul
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0 }}
+          className="bg-myColor flex flex-col gap-2 rounded-lg p-4 px-6 text-black font-medium side-nav absolute right-[1rem] top-[100%]">
           {navs.map((nav) => {
             return (
               <li key={nav.text}>
@@ -56,7 +63,7 @@ const Nav = () => {
               </li>
             );
           })}
-        </ul>
+        </motion.ul>
       )}
       <div className="hidden lg:flex gap-[3rem] text-sm">
         <ul className="flex gap-[3rem]">
