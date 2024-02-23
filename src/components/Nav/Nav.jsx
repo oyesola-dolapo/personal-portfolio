@@ -31,6 +31,8 @@ const Nav = ({ mode, changeMode }) => {
   const openMenu = () => {
     setMenu(!menu);
   };
+
+  
   return (
     <nav
       className={`z-[99] flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] absolute top-0 left-0 w-full`}>
@@ -59,7 +61,11 @@ const Nav = ({ mode, changeMode }) => {
           className="bg-myColor flex flex-col gap-2 rounded-lg p-4 px-6 text-black font-medium side-nav absolute right-[1rem] top-[100%]">
           {navs.map((nav) => {
             return (
-              <li key={nav.text}>
+              <li
+                key={nav.text}
+                onClick={() => {
+                  openMenu();
+                }}>
                 <a href={nav.link}>{nav.text}</a>
               </li>
             );
@@ -69,10 +75,10 @@ const Nav = ({ mode, changeMode }) => {
             onClick={() => {
               changeMode();
             }}>
-            {!mode ? (
-              <i class="fa-solid fa-sun"></i>
-            ) : (
+            {mode ? (
               <i class="fa-regular fa-moon text-black"></i>
+            ) : (
+              <i class="fa-solid fa-sun"></i>
             )}
           </div>
         </motion.ul>

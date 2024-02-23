@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 
-export default function Footer({ mode, changeMode }) {
+export default function Footer({ mode }) {
   const navs = [
     {
       text: "Home",
