@@ -69,7 +69,7 @@ export default function Projects({ mode }) {
     },
   ];
   return (
-    <ul className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center">
+    <ul className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center z-[1]">
       {projects.map((project) => {
         return (
           <motion.li
