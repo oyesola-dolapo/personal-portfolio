@@ -9,9 +9,14 @@ export default function Portfolio({ mode }) {
       <h1 className="text-center">
         Featured <span className="text-myColor">Projects</span>
       </h1>
-      <motion.div>
+      <div>
         <Projects mode={mode} />
-        <div className={` flex gap-4 justify-center`}>
+        <motion.div
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0 }}
+          className={` flex gap-4 justify-center`}>
           <a
             href="https://www.behance.net/dolapooyesola"
             target="_blank"
@@ -24,8 +29,8 @@ export default function Portfolio({ mode }) {
             className="view relative">
             View Github
           </a>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }
