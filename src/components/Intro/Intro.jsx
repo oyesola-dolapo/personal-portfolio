@@ -29,7 +29,7 @@ export default function Intro() {
     },
   ];
   return (
-    <section className="h-screen relative flex px-2">
+    <section className="h-screen relative flex">
       <img
         src="../../images/background.avif"
         alt=""
@@ -40,7 +40,7 @@ export default function Intro() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className=" mx-auto my-auto flex flex-col pt-24 z-[1]">
+        className=" mx-auto my-auto flex flex-col pt-24 z-[1] px-4">
         <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
