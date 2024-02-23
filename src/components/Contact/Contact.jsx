@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 
-export default function Contact() {
+export default function Contact({ mode }) {
   const dets = [
     {
       id: "1",
@@ -23,19 +23,21 @@ export default function Contact() {
   ];
   return (
     <section id="Contact" className="lg:px-24 pt-12 pb-6">
-      <p className="text-sm opacity-[.5] text-center">GET IN TOUCH</p>
-      <h1 className="text-center text-xl">
-        Contact <span className="text-myColor">me</span>
-      </h1>
-      <motion.p
-        variants={fadeIn("up", 0)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0 }}
-        className="text-center mb-4 lg:mb-8 mt-4 text-sm px-2 lg:p-0 lg:text-lg">
-        I am currently open to full-time, contract or part-time{" "}
-        <span className="text-myColor">opportunities</span>
-      </motion.p>
+      <div className={`${!mode && "text-black"}`}>
+        <p className="text-sm opacity-[.5] text-center">GET IN TOUCH</p>
+        <h1 className="text-center text-xl">
+          Contact <span className="text-myColor">me</span>
+        </h1>
+        <motion.p
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0 }}
+          className="text-center mb-4 lg:mb-8 mt-4 text-sm px-2 lg:p-0 lg:text-lg">
+          I am currently open to full-time, contract or part-time{" "}
+          <span className="text-myColor">opportunities</span>
+        </motion.p>
+      </div>
       <div className="flex flex-col pb-8 px-8 lg:flex-row bg-[#131313] lg:p-20 rounded-lg">
         <motion.div
           variants={fadeIn("up", 0)}

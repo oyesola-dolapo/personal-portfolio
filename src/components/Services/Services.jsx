@@ -1,4 +1,3 @@
-import styles from "./services.module.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 

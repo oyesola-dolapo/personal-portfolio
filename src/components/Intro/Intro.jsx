@@ -12,19 +12,19 @@ export default function Intro() {
   });
   const socials = [
     {
-      icon: <i class="fa-brands fa-x-twitter text-black"></i>,
+      icon: <i className="fa-brands fa-x-twitter text-black"></i>,
       link: "https://twitter.com/ferraziii",
     },
     {
-      icon: <i class="fa-brands fa-linkedin-in text-black"></i>,
+      icon: <i className="fa-brands fa-linkedin-in text-black"></i>,
       link: "https://www.linkedin.com/in/oyesola-dolapo-778642173/",
     },
     {
-      icon: <i class="fa-brands fa-github text-black"></i>,
+      icon: <i className="fa-brands fa-github text-black"></i>,
       link: "https://github.com/oyesola-dolapo",
     },
     {
-      icon: <i class="fa-brands fa-behance text-black"></i>,
+      icon: <i className="fa-brands fa-behance text-black"></i>,
       link: "https://www.behance.net/dolapooyesola",
     },
   ];
@@ -40,7 +40,7 @@ export default function Intro() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className=" details mx-auto my-auto flex flex-col pt-24 z-[1]">
+        className=" mx-auto my-auto flex flex-col pt-24 z-[1]">
         <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
@@ -67,7 +67,7 @@ export default function Intro() {
         <ul className="flex gap-[2rem] mx-auto mt-20">
           {socials.map((social) => {
             return (
-              <li>
+              <li key={social.link}>
                 <a
                   href={social.link}
                   target="_blank"

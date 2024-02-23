@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "/src/components/Variants.js";
 
-export default function Projects() {
+export default function Projects({ mode }) {
   const projects = [
     {
       title: "Carway",
@@ -77,7 +77,10 @@ export default function Projects() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0 }}
-            className="bg-[#070707] shadow shadow-slate-800 rounded-xl border-solid border-myColor sm:w-[20rem] lg:w-[25rem]">
+            key={project.title}
+            className={`${
+              !mode ? "bg-white" : "bg-[#070707]"
+            }  shadow shadow-slate-800 rounded-xl border-solid border-myColor sm:w-[20rem] lg:w-[25rem]`}>
             <a href={project.button[0].link}>
               <img
                 loading="lazy"

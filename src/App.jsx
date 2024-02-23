@@ -8,14 +8,23 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
+  const [mode, setMode] = useState(false);
+  const changeMode = () => {
+    setMode(!mode);
+    console.log(mode);
+  };
+
   return (
-    <div className="text-white bg-[#070707] min-h-[100vh] overflow-x-hidden">
-      <Landing />
-      <Services />
-      <Portfolio />
-      <About />
-      <Contact />
-      <Footer />
+    <div
+      className={`${
+        !mode ? "bg-white" : "bg-[#070707]"
+      } text-white overflow-x-hidden`}>
+      <Landing mode={mode} changeMode={changeMode}/>
+      <Services mode={mode} />
+      <Portfolio mode={mode} />
+      <About mode={mode} />
+      <Contact mode={mode} />
+      <Footer mode={mode} changeMode={changeMode} />
     </div>
   );
 }

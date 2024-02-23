@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 
-export default function Footer() {
+export default function Footer({ mode, changeMode }) {
   const navs = [
     {
       text: "Home",
@@ -39,8 +39,12 @@ export default function Footer() {
       link: "https://wa.me/2349067219868",
     },
   ];
+
   return (
-    <footer className="flex flex-col lg:flex-row justify-between pb-4 px-8 lg:px-32 lg:py-8">
+    <footer
+      className={`${
+        !mode && "text-black"
+      } flex flex-col lg:flex-row justify-between pb-4 px-8 lg:px-32 lg:py-8 overflow-hidden`}>
       <motion.h1
         variants={fadeIn("up", 0)}
         initial="hidden"
@@ -49,7 +53,10 @@ export default function Footer() {
         className="mb-4 logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </motion.h1>
-      <div className="flex flex-col lg:flex-row text-sm opacity-[.7] lg:mr-24">
+      <div
+        className={`${
+          mode && "opacity-[.7]"
+        } flex flex-col lg:flex-row text-sm  lg:mr-24`}>
         <motion.div
           variants={fadeIn("up", 0)}
           initial="hidden"
@@ -78,7 +85,7 @@ export default function Footer() {
           <ul className="flex gap-[1.5rem] ">
             {socials.map((social) => {
               return (
-                <li>
+                <li key={social.link}>
                   <a href={social.link} target="_blank" className="text-lg">
                     {social.icon}
                   </a>
@@ -88,6 +95,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      
     </footer>
   );
 }

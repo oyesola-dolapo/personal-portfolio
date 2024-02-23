@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 
-export default function About() {
+export default function About({ mode }) {
   return (
-    <section id="About" className="py-6">
+    <section id="About" className={`${!mode && 'text-black'} py-6`}>
       <p className="text-center text-sm opacity-[.5]">MY BIO</p>
       <h1 className="text-center text-xl">
         About <span className="text-myColor">Me</span>
