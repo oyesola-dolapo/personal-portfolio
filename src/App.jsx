@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
   const changeMode = () => {
     setMode(!mode);
     console.log(mode);
