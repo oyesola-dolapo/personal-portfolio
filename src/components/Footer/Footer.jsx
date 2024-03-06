@@ -49,7 +49,7 @@ export default function Footer({ mode }) {
         variants={fadeIn("up", 0)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0 }}
+        viewport={{ once: true }}
         className="mb-4 logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </motion.h1>
@@ -61,7 +61,7 @@ export default function Footer({ mode }) {
           variants={fadeIn("up", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="flex flex-col gap-[1rem] lg:gap-[1rem] lg:px-[4rem] lg:pb-[3rem]">
           <p>Software Developer</p>
           <p>Ui Designer</p>
@@ -70,7 +70,7 @@ export default function Footer({ mode }) {
           variants={fadeIn("up", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="flex flex-col py-[2rem] gap-[1rem] lg:py-0 lg:px-[4rem] lg:pb-[3rem] lg:border-x-2 lg:border-solid">
           {navs.map((nav) => {
             return (
@@ -80,7 +80,12 @@ export default function Footer({ mode }) {
             );
           })}
         </motion.ul>
-        <div className="lg:px-[4rem]">
+        <motion.div
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className="lg:px-[4rem]">
           <p className="mb-4">Social media handles</p>
           <ul className="flex gap-[1.5rem] ">
             {socials.map((social) => {
@@ -93,9 +98,8 @@ export default function Footer({ mode }) {
               );
             })}
           </ul>
-        </div>
+        </motion.div>
       </div>
-      
     </footer>
   );
 }

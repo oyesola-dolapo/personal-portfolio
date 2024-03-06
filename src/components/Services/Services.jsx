@@ -22,7 +22,9 @@ export default function Services() {
     },
   ];
   return (
-    <section id="Services" className="py-10 rounded-lg lg:rounded-none bg-[#131313]">
+    <section
+      id="Services"
+      className="py-10 rounded-lg lg:rounded-none bg-[#131313]">
       <div>
         <p className="text-center opacity-[.5] text-sm">SERVICES</p>
         <h1 className="text-center text-2xl">
@@ -38,8 +40,9 @@ export default function Services() {
             <motion.div
               variants={fadeIn("up", 0)}
               initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0 }}
+              whileInView="show"
+              viewport={{ once: true }}
+
               key={card.index}
               className={`${cardStyle} relative sm:w-[25rem] border-2 border-solid border-myColor rounded-xl py-10 px-4`}>
               <h1 className="absolute right-[2rem] top-[1rem] text-4xl font-medium opacity-[.3]">

@@ -32,7 +32,6 @@ const Nav = ({ mode, changeMode }) => {
     setMenu(!menu);
   };
 
-  
   return (
     <nav
       className={`z-[99] flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] absolute top-0 left-0 w-full`}>

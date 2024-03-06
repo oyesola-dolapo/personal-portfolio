@@ -35,36 +35,41 @@ export default function Intro() {
         alt=""
         className="absolute w-full h-full opacity-[.1]"
       />
-      <motion.div
-        variants={fadeIn("down", 0)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className=" mx-auto my-auto flex flex-col pt-24 z-[1] px-4">
-        <h1 className="text-xl sm:text-4xl tracking-wider text-center ">
+      <div className=" mx-auto my-auto flex flex-col pt-24 z-[1] px-4">
+        <motion.h1
+          variants={fadeIn("up", 0)}
+          initial="hidden"
+          animate={"show"}
+          className="text-xl sm:text-4xl tracking-wider text-center ">
           Hi, I am&nbsp;
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
-        </h1>
-        <p
-          variants={fadeIn("down", 0)}
+        </motion.h1>
+        <motion.p
+          variants={fadeIn("up", 0.5)}
           initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+          animate={"show"}
           className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider mt-6 mb-12 lg:mb-6">
           Passionate &nbsp;
           <span className="text-myColor font-medium">{typeEffect}</span>
           &nbsp; crafting innovative digital experiences with a blend of elegant
           design and cutting-edge technology.
-        </p>
-        <button>
+        </motion.p>
+        <motion.button
+          variants={fadeIn("up", 1)}
+          initial="hidden"
+          animate={"show"}>
           <a
             href="../file/Resume-Oyesola-Dolapo.pdf"
             target="_blank"
             className="bg-myColor rounded px-4 py-2 text-black lg:hidden">
             View Resume <i class="fa-solid fa-download text-black ml-2"></i>
           </a>
-        </button>
-        <ul className="flex gap-[2rem] mx-auto mt-20">
+        </motion.button>
+        <motion.ul
+          variants={fadeIn("up", 1)}
+          initial="hidden"
+          whileInView={"show"}
+          className="flex gap-[2rem] mx-auto mt-20">
           {socials.map((social) => {
             return (
               <li key={social.link}>
@@ -77,8 +82,8 @@ export default function Intro() {
               </li>
             );
           })}
-        </ul>
-      </motion.div>
+        </motion.ul>
+      </div>
     </section>
   );
 }

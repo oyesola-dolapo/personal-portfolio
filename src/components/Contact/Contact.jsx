@@ -28,18 +28,17 @@ export default function Contact({ mode }) {
         <h1 className="text-center text-xl">
           Contact <span className="text-myColor">me</span>
         </h1>
-        <p
-          className="text-center mb-4 lg:mb-8 mt-4 text-sm px-2 lg:p-0 lg:text-lg">
+        <p className="text-center mb-4 lg:mb-8 mt-4 text-sm px-2 lg:p-0 lg:text-lg">
           I am currently open to full-time, contract or part-time{" "}
           <span className="text-myColor">opportunities</span>
         </p>
       </div>
       <div className="flex flex-col pb-8 px-8 lg:flex-row bg-[#131313] lg:p-20 rounded-lg">
         <motion.div
-          variants={fadeIn("right", 0)}
+          variants={fadeIn("up", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="py-4 lg:p-0 lg:w-[50%]">
           <p className="text-lg">Have an Awesome project idea?</p>
           <p className="text-myColor mb-6 lg:mb-10 mt-2 text-lg">
@@ -65,10 +64,10 @@ export default function Contact({ mode }) {
           </ul>
         </motion.div>
         <motion.div
-          variants={fadeIn("left", 0)}
+          variants={fadeIn("up", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="lg:w-[50%] flex">
           <form
             action="https://formsubmit.co/oyesolabolamide@gmail.com"

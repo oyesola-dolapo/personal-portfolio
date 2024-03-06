@@ -3,7 +3,7 @@ import { fadeIn } from "../Variants";
 
 export default function About({ mode }) {
   return (
-    <section id="About" className={`${!mode && 'text-black'} py-6`}>
+    <section id="About" className={`${!mode && "text-black"} py-6`}>
       <p className="text-center text-sm opacity-[.5]">MY BIO</p>
       <h1 className="text-center text-xl">
         About <span className="text-myColor">Me</span>
@@ -13,7 +13,7 @@ export default function About({ mode }) {
           variants={fadeIn("right", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="left flex py-6 sm:py-0 lg:w-[50%]">
           <div className="m-auto border-[2px] border-solid border-myColor relative rounded-full w-max p-6">
             <img
@@ -47,7 +47,7 @@ export default function About({ mode }) {
           variants={fadeIn("left", 0)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: true }}
           className="right flex flex-col gap-6 items-start px-6 lg:w-[50%] lg:px-20  mx-auto">
           <div className="opacity-[.7] text-sm flex flex-col gap-4 lg:text-base">
             <p>

@@ -75,8 +75,8 @@ export default function Projects({ mode }) {
           <motion.li
             variants={fadeIn("up", 0)}
             initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0 }}
+            whileInView="show"
+            viewport={{ once: true }}
             key={project.title}
             className={`${
               !mode ? "bg-white" : "bg-[#070707]"
