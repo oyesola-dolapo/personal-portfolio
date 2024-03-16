@@ -53,8 +53,9 @@ const Nav = ({ mode, changeMode }) => {
       )}
       {menu && (
         <motion.ul
-          variants={fadeIn("left", 0)}
+          variants={fadeIn("left", 0, .3)}
           initial="hidden"
+          transition={{ duration: 0.5 }}
           whileInView={"show"}
           viewport={{ once: false, amount: 0 }}
           className="bg-myColor flex flex-col gap-2 rounded-lg p-4 px-6 text-black font-medium side-nav absolute right-[1rem] top-[100%]">

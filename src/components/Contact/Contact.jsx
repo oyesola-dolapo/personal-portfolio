@@ -35,7 +35,7 @@ export default function Contact({ mode }) {
       </div>
       <div className="flex flex-col pb-8 px-8 lg:flex-row bg-[#131313] lg:p-20 rounded-lg">
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
@@ -64,7 +64,7 @@ export default function Contact({ mode }) {
           </ul>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}

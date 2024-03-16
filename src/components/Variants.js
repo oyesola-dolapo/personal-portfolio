@@ -1,4 +1,4 @@
-export const fadeIn = (direction, delay) => {
+export const fadeIn = (direction, delay, duration) => {
   return {
     hidden: {
       opacity: 0,
@@ -11,7 +11,7 @@ export const fadeIn = (direction, delay) => {
       opacity: 1,
       transition: {
         type: "tween",
-        duration: 1,
+        duration: duration,
         delay: delay,
       },
     },

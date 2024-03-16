@@ -73,7 +73,7 @@ export default function Projects({ mode }) {
       {projects.map((project) => {
         return (
           <motion.li
-            variants={fadeIn("up", 0)}
+            variants={fadeIn("up", 0, 1)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}

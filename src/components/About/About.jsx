@@ -10,7 +10,7 @@ export default function About({ mode }) {
       </h1>
       <div className="sm:flex sm:py-6 sm:px-6 gap-2 sm:items-start">
         <motion.div
-          variants={fadeIn("right", 0)}
+          variants={fadeIn("right", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
@@ -21,22 +21,38 @@ export default function About({ mode }) {
               alt=""
               className="rounded-full w-[15rem] lg:w-[25rem] border-[2px] border-solid border-myColor"
             />
-            <img
+            <motion.img
+              variants={fadeIn("right", 0.5, 1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
               src="../../images/progIcons/js.webp"
               alt=""
               className="icon top-2 left-10 lg:top-6 lg:left-20"
             />
-            <img
+            <motion.img
+              variants={fadeIn("right", 0.5, 1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
               src="../../images/progIcons/css.webp"
               alt=""
               className="icon bottom-10 lg:bottom-20"
             />
-            <img
+            <motion.img
+              variants={fadeIn("left", 0.5, 1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
               src="../../images/progIcons/react.webp"
               alt=""
               className="icon right-2 top-10 lg:right-6 lg:top-20"
             />
-            <img
+            <motion.img
+              variants={fadeIn("left", 0.5, 1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
               src="../../images/progIcons/figma.webp"
               alt=""
               className="icon right-0 bottom-10 lg:right-4 lg:bottom-20"
@@ -44,7 +60,7 @@ export default function About({ mode }) {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("left", 0)}
+          variants={fadeIn("left", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}

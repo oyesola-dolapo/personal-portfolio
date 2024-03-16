@@ -46,7 +46,7 @@ export default function Footer({ mode }) {
         !mode && "text-black"
       } flex flex-col lg:flex-row justify-between pb-4 px-8 lg:px-32 lg:py-8 overflow-hidden`}>
       <motion.h1
-        variants={fadeIn("up", 0)}
+        variants={fadeIn("up", 0, 1)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function Footer({ mode }) {
           mode && "opacity-[.7]"
         } flex flex-col lg:flex-row text-sm  lg:mr-24`}>
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
@@ -67,7 +67,7 @@ export default function Footer({ mode }) {
           <p>Ui Designer</p>
         </motion.div>
         <motion.ul
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
@@ -81,7 +81,7 @@ export default function Footer({ mode }) {
           })}
         </motion.ul>
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}

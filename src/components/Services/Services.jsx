@@ -38,7 +38,7 @@ export default function Services() {
           const lineStyle = card.index === "01" ? "bg-black" : "bg-white";
           return (
             <motion.div
-              variants={fadeIn("up", 0)}
+              variants={fadeIn("up", 0, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}

@@ -12,7 +12,7 @@ export default function Portfolio({ mode }) {
       <div>
         <Projects mode={mode} />
         <motion.div
-          variants={fadeIn("up", 0)}
+          variants={fadeIn("up", 0, 1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
