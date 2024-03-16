@@ -17,9 +17,9 @@ export default function Skill() {
   
     return (
       <div className="overflow-hidden">
-        <ul className="flex gap-4 w-max skill-container">
+        <ul className="flex gap-4 px-[2rem] w-max skill-container">
           {extendedSkills.map((skill, index) => {
-            return <li key={index} className=" skill-move p-2 px-3 bg-[#202020] rounded-lg text-[#878787] font-semibold shadow-[#2c2c2c]">{skill.skill}</li>;
+            return <li key={index} className=" skill-move p-2 px-3 bg-[#202020] rounded-lg text-[#878787] font-semibold">{skill.skill}</li>;
           })}
         </ul>
       </div>

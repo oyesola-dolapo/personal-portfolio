@@ -43,7 +43,7 @@ textarea {
 }
 
 .skill-container {
-  animation: skillMove 10s linear infinite;
+  animation: skillMove 10s linear infinite alternate;
   white-space: nowrap;
 }
 
@@ -59,7 +59,7 @@ textarea {
 .skill-move {
   position: relative;
   z-index: 1;
-  margin: 1rem 0 0 0;
+  margin: .5rem 0;
 }
 
 .skill-move::after {
