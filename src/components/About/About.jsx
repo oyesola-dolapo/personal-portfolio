@@ -69,7 +69,7 @@ export default function About({ mode }) {
             <p>
               Greetings! I'm{" "}
               <span className="text-myColor font-medium">Oyesola Dolapo</span>,
-              a seasoned software developer and UI designer driven by the
+              a seasoned software engineer and UI designer driven by the
               pursuit of crafting immersive digital experiences. With a degree
               in{" "}
               <span className="text-myColor font-medium">Computer Science</span>{" "}

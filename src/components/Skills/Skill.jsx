@@ -10,6 +10,8 @@ export default function Skill() {
     { skill: "FIREBASE" },
     { skill: "FIGMA" },
     { skill: "PYTHON" },
+    { skill: "React Native" },
+    { skill: "Expo" },
   ];
 
   const extendedSkills = [...skills, ...skills];

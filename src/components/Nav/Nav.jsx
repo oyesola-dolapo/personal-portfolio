@@ -34,7 +34,7 @@ const Nav = ({ mode, changeMode }) => {
 
   return (
     <nav
-      className={`z-[99] flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] absolute top-0 left-0 w-full`}>
+      className={`z-[99] bg-[#070707] shadow-lg fixed flex justify-between px-[1.5rem] sm:px-[5rem] py-[1rem] top-0 left-0 w-full`}>
       <h1 className="logo tracking-wider text-xl">
         Ferrazi<i className="fa-solid fa-circle text-[6px] text-myColor"></i>
       </h1>
@@ -53,7 +53,7 @@ const Nav = ({ mode, changeMode }) => {
       )}
       {menu && (
         <motion.ul
-          variants={fadeIn("left", 0, .3)}
+          variants={fadeIn("left", 0, 0.3)}
           initial="hidden"
           transition={{ duration: 0.5 }}
           whileInView={"show"}

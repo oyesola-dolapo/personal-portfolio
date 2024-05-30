@@ -45,11 +45,11 @@ export default function Projects({ mode }) {
       button: [
         {
           btnText: "Demo",
-          link: "https://9ff.netlify.app/",
+          link: "https://fancy-tapioca-545212.netlify.app/",
         },
         {
           btnText: "Code",
-          link: "https://github.com/oyesola-dolapo/9FF",
+          link: "https://github.com/oyesola-dolapo/jossyy",
         },
       ],
     },
@@ -68,6 +68,7 @@ export default function Projects({ mode }) {
       ],
     },
   ];
+
   return (
     <ul className="py-6 flex flex-col gap-6 flex-wrap lg:gap-10 sm:flex-row justify-center z-[1]">
       {projects.map((project) => {
