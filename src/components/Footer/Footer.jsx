@@ -63,7 +63,7 @@ export default function Footer({ mode }) {
           whileInView={"show"}
           viewport={{ once: true }}
           className="flex flex-col gap-[1rem] lg:gap-[1rem] lg:px-[4rem] lg:pb-[3rem]">
-          <p>Software Developer</p>
+          <p>Software Engineer</p>
           <p>Ui Designer</p>
         </motion.div>
         <motion.ul

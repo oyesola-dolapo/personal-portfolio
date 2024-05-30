@@ -6,7 +6,7 @@ export default function Services() {
     {
       index: "01",
       icon: <i class="fa-solid fa-code"></i>,
-      title: "Software Development",
+      title: "Software Engineering",
       writeUp: `I specialize in building robust and scalable
        software solutions tailored to meet diverse user
         needs and business requirements.`,
