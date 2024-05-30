@@ -37,7 +37,7 @@ export default function Intro() {
       />
       <div className=" mx-auto my-auto flex flex-col pt-24 z-[1] px-4">
         <motion.h1
-          variants={fadeIn("up", 0, .7)}
+          variants={fadeIn("up", 0, 0.7)}
           initial="hidden"
           animate={"show"}
           className="text-xl sm:text-4xl tracking-wider text-center ">
@@ -45,7 +45,7 @@ export default function Intro() {
           <span className="text-myColor font-medium">Oyesola Dolapo</span>
         </motion.h1>
         <motion.p
-          variants={fadeIn("up", 0.5, .7)}
+          variants={fadeIn("up", 0.5, 0.7)}
           initial="hidden"
           animate={"show"}
           className="text-sm sm:w-[45rem] sm:text-xl text-center tracking-wider mt-6 mb-12 lg:mb-6">
@@ -55,7 +55,7 @@ export default function Intro() {
           design and cutting-edge technology.
         </motion.p>
         <motion.button
-          variants={fadeIn("up", 1, .7)}
+          variants={fadeIn("up", 1, 0.7)}
           initial="hidden"
           animate={"show"}>
           <a
@@ -66,7 +66,7 @@ export default function Intro() {
           </a>
         </motion.button>
         <motion.ul
-          variants={fadeIn("up", 1, .7)}
+          variants={fadeIn("up", 1, 0.7)}
           initial="hidden"
           whileInView={"show"}
           className="flex gap-[2rem] mx-auto mt-20">

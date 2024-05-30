@@ -68,6 +68,34 @@ export default function Projects({ mode }) {
         },
       ],
     },
+    {
+      title: "Kuda clone",
+      image: "/images/project/Kuda.webp",
+      button: [
+        {
+          btnText: "Demo",
+          link: "https://www.behance.net/gallery/160756153/Kuda-Bank-Landing-page",
+        },
+        {
+          btnText: "Design",
+          link: "https://www.figma.com/design/8V8AzLqtS3I6D6vZeGbhS9/kuda.?node-id=0-1&t=rsoWCmiY5e9LDq3X-1e",
+        },
+      ],
+    },
+    {
+      title: "Fitness",
+      image: "/images/project/gym.webp",
+      button: [
+        {
+          btnText: "Demo",
+          link: "https://oyesola-dolapo.github.io/Gym/",
+        },
+        {
+          btnText: "Code",
+          link: "https://github.com/oyesola-dolapo/Gym",
+        },
+      ],
+    },
   ];
 
   return (
