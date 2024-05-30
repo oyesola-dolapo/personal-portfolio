@@ -4,6 +4,20 @@ import { fadeIn } from "/src/components/Variants.js";
 export default function Projects({ mode }) {
   const projects = [
     {
+      title: "𝟗ƑℲ",
+      image: "/images/project/9ff.webp",
+      button: [
+        {
+          btnText: "Demo",
+          link: "https://fancy-tapioca-545212.netlify.app/",
+        },
+        {
+          btnText: "Code",
+          link: "https://github.com/oyesola-dolapo/jossyy",
+        },
+      ],
+    },
+    {
       title: "Carway",
       image: "/images/project/Carway.webp",
       button: [
@@ -11,20 +25,7 @@ export default function Projects({ mode }) {
         { btnText: "Code", link: "https://github.com/oyesola-dolapo/Carway/" },
       ],
     },
-    {
-      title: "Furniture",
-      image: "/images/project/Furniture.webp",
-      button: [
-        {
-          btnText: "Demo",
-          link: "https://oyesola-dolapo.github.io/furniture-e-commerce/",
-        },
-        {
-          btnText: "Code",
-          link: "https://github.com/oyesola-dolapo/furniture-e-commerce",
-        },
-      ],
-    },
+
     {
       title: "NFT Dashboard",
       image: "/images/project/NFT.webp",
@@ -40,16 +41,16 @@ export default function Projects({ mode }) {
       ],
     },
     {
-      title: "𝟗ƑℲ",
-      image: "/images/project/9ff.webp",
+      title: "Furniture",
+      image: "/images/project/Furniture.webp",
       button: [
         {
           btnText: "Demo",
-          link: "https://fancy-tapioca-545212.netlify.app/",
+          link: "https://oyesola-dolapo.github.io/furniture-e-commerce/",
         },
         {
           btnText: "Code",
-          link: "https://github.com/oyesola-dolapo/jossyy",
+          link: "https://github.com/oyesola-dolapo/furniture-e-commerce",
         },
       ],
     },
