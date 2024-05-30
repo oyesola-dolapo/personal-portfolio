@@ -44,7 +44,7 @@ export default function Footer({ mode }) {
     <footer
       className={`${
         !mode && "text-black"
-      } flex flex-col lg:flex-row justify-between pb-4 px-8 lg:px-32 lg:py-8 overflow-hidden`}>
+      } flex flex-col lg:flex-row justify-between pb-8 sm:pb-4 px-8 lg:px-32 lg:py-8 overflow-hidden`}>
       <motion.h1
         variants={fadeIn("up", 0, 1)}
         initial="hidden"
